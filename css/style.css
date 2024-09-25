@@ -2,8 +2,9 @@
 @import url(fonts.css);
 
 /* import untuk section  */
-@import url(components/header.css);
-@import url(components/hero.css);
+@import url(components/landing/header.css);
+@import url(components/landing/hero.css);
+@import url(components/landing/company.css);
 
 :root {
     --clr-dark:#070a13 ;
@@ -37,6 +38,7 @@
 * {
     margin: 0;
     line-height: calc(1em + 0.5rem);
+    border: 1px solid red;
 }
 *,
 ::before,
