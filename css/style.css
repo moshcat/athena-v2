@@ -6,6 +6,9 @@
 @import url(components/landing/hero.css);
 @import url(components/landing/company.css);
 
+/* import untuk signin  */
+@import url(components/signin/siginin_card.css);
+
 :root {
     --clr-dark:#070a13 ;
     --clr-light: #f1f5f9;
@@ -14,6 +17,7 @@
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
     --clr-indigo: #4f45e5;
+    --clr-sky: #0284c7;
 
     /* rgb(225,29,72)
     rgb(79, 70, 229) */
@@ -38,7 +42,7 @@
 * {
     margin: 0;
     line-height: calc(1em + 0.5rem);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 *,
 ::before,

@@ -5,6 +5,9 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.header-home {
+    background-color: #000 ;
+}
 
 .header__menu {
     display: none;
@@ -41,7 +44,7 @@
         transition: color 0.3s;
     }
     .header__link:hover {
-        color: var(--clr-rose);
+        color: var(--clr-sky);
     }
     .header__line{
         border: 1px solid var(--clr-slate600);

@@ -1,10 +1,25 @@
-.comapany__wrapper {
+.company {
+  margin-top: 3rem;
+  /* border-top: 2px solid var(--clr-slate600); */
+
+}
+.company__title {
+  font-size: var(--size-xs);
+  color: var(--clr-light);
+  text-align: center;
+  margin-bottom: var(--size-3xl);
+  /* margin-top: var(--size-6xl); */
+  font-weight: 600;
+  word-spacing: -0.07em;
+  font-family: "Satoshi", sans-serif;
+}
+
+.company__wrapper {
     width: 90%;
     max-width: 1536px;
     margin-inline: auto;
     position: relative;
     height: 100px;
-    margin-top: 5rem;
     overflow: hidden;
     mask-image: linear-gradient(
       to right,
@@ -22,10 +37,14 @@
   }
   
   .company__item {
-    font-size: var(--size-8xl);
+    width: 200px;
+    height: 100px;
+    font-size: var(--size-5xl);
+    color: var(--clr-slate600);
+    /* font-size: var(--size-6xl); ini untuk laptop level  */
     border-radius: 6px;
     position: absolute;
-    left: max(calc(200px * 8), 100%);
+    left: max(calc(100px * 8), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -70,9 +89,21 @@
 /* sm  */
 @media (min-width: 640px){}
 /* md  */
-@media (min-width: 768px){}
+@media (min-width: 768px){
+  .company__title {
+    font-size: var(--size-base);
+  }
+}
 /* lg  */
-@media (min-width: 1024px){}
+@media (min-width: 1024px){
+  .company__item {
+    font-size: var(--size-6xl);
+  }
+  .company__title {
+    margin-bottom: var(--size-5xl);
+    font-size: var(--size-xl);
+  }
+}
 /* xl  */
 @media (min-width: 1280px){}
 /* 2xl  */

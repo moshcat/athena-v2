@@ -4,8 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1rem;  
+    /* margin-top: 2rem;  */
+    padding-bottom: var(--size-8xl);
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    border-bottom: 2px solid #334155;
 }
 
 .hero__title{
