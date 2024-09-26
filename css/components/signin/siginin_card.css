@@ -94,6 +94,12 @@ input:focus {
     font-weight: 400;
     text-decoration: none;
 }
+.signin__term {
+    font-weight: 600;
+}
+.signin__term:hover {
+    text-decoration: underline;
+}
 
 input[type="checkbox"] {
     width: 1rem;
