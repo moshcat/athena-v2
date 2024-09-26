@@ -1,34 +1,47 @@
+.bg__signin {
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0)) !important;
+}
+
 .signin {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
 }
 .signin__container {
     width: 100%;
     max-width: 24rem;
-    padding: 1rem;
-    background-color: #1f2937;
-    border: 1px solid #334155;
+    padding: 24px;
+    margin-bottom: var(--size-6xl);
+    background-color: var(--clr-slate800);
+    border: 1px solid var(--clr-border);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.signin__group-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 .signin__title {
-    font-size: 1.5rem;
+    font-size: var(--size-2xl);
     font-weight: 700;
+    word-spacing: -0.05em;
+    font-family: "Satoshi", sans-serif;
     color: var(--clr-light);
+}
+.signin__subtitle {
+    font-size: var(--size-sm);
+    word-spacing: -0.05em;
+    color: var(--clr-slate400);
+
 }
 .signin__form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-
-.signin__title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color:var(--clr-light);
 }
 
 .signin__input-group {
@@ -41,13 +54,14 @@ label {
     font-size: var(--size-xs);
     font-weight: 500;
     color: var(--clr-light);
+    font-family: "Satoshi", sans-serif;
 }
 
 input[type="email"],
 input[type="password"] {
-    background-color: #f9fafb;
-    border: 1px solid #d1d5db;
-    color: #111827;
+    background-color: var(--clr-gray800);
+    border: 1px solid var(--clr-gray700);
+    color: var(--clr-light);
     font-size: 0.875rem;
     padding: 0.625rem;
     border-radius: 0.5rem;
@@ -55,7 +69,9 @@ input[type="password"] {
     box-sizing: border-box;
     outline: none;
 }
-
+.signin__input-group input::placeholder {
+    color: #9ca3af;
+}
 input:focus {
     border-color: #3b82f6;
     ring-color: #3b82f6;
@@ -74,7 +90,8 @@ input:focus {
 }
 .signin__forgot {
     font-size: var(--size-xs);
-    color: #3b82f6;
+    color: var(--clr-sky);
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -87,24 +104,35 @@ input[type="checkbox"] {
 }
 
 .btn-3rd {
-    display: flex;;
+    display: flex;
     justify-content: center;
     gap: 0.5rem;
     text-align: center;
     align-items: center;
+    border: 1px solid var(--clr-border);
+}
+.btn-submit {
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+}
+.btn-submit {
+    transform: translateY(-3px) !important;
+}
+.btn-3rd:hover {
+    background-color: var(--clr-border) !important;
 }
 .google__logo {
-    font-size: var(--size-2xl);
+    font-size: var(--size-xl);
 }
 
 .register-text {
     font-size: var(--size-xs);
-    color: #6b7280;
+    color: var(--clr-slate400);
     text-align: center;
 }
 
 .register-text a {
-    color: #3b82f6;
+    color:var(--clr-sky);
 }
 
 .register-text a:hover {
@@ -118,7 +146,7 @@ input[type="checkbox"] {
   text-align: center;
   font-size: var(--size-xs);
   gap: var(--size-xs);
-  color: var(--clr-slate400);
+  color: var(--clr-light);
 }
 
 .separator::before,
