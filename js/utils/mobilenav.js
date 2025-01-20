@@ -7,6 +7,7 @@ const mobileNav = () => {
   // State
   let isMobileNavOpen = false;
 
+  
   headerBtn.addEventListener('click', () => {
     isMobileNavOpen = !isMobileNavOpen;
     if (isMobileNavOpen) {
