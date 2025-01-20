@@ -1,0 +1,119 @@
+.testi {
+    max-width: 1520px;
+    margin-top: 12rem;
+}
+.testi__title {
+    font-size: var(--size-2xl);
+    text-align: center;
+    margin-bottom: var(--size-7xl);
+    font-family: "Satoshi", sans-serif;
+}
+.testi__card {
+    max-width: 365px;
+    background-color: var(--clr-dark);
+    display: flex;
+    border: 1px solid var(--clr-border);
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;;
+}
+.testi__card:hover {
+    background-color: var(--clr-gray800);
+}
+.testi__btn i {
+    font-size: var(--size-2xl);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: var(--size-3xl);
+    padding:0.5rem;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: 1px solid var(--clr-light);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    rotate: -45deg;
+}
+.testi__btn:hover i {
+    background-color: var(--clr-slate400);
+}
+
+.testi__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 80%;
+}
+.testi__content--comment {
+    text-align: center;
+    font-size: var(--size-xl);
+    max-width: 50ch;
+    margin-top: var(--size-2xl);
+    margin-bottom: var(--size-2xl);
+}
+.testi__content--end .testi__quote {
+    float: right;
+}
+.testi__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-basis: 20%;
+}
+.testi__profile--img {
+    width: 80px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.testi__profile--name{
+    margin-bottom: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.testi__profile--name h3 {
+    font-size: var(--size-2xl);
+    font-weight: 700;
+    font-family: "Satoshi", sans-serif;
+}
+.testi__profile--name p {
+    font-size: var(--size-md);
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.testi__quote {
+    width: var(--size-xl);
+}
+.testi__quote path {
+    fill: var(--clr-slate400);
+}
+
+
+
+/* xs */
+@media (min-width: 475px){}
+/* sm  */
+@media (min-width: 640px){
+}
+/* md  */
+@media (min-width: 768px){
+    .testi__title {
+        font-size: var(--size-4xl);
+    }
+}
+/* lg  */
+@media (min-width: 1024px){
+}
+/* xl  */
+@media (min-width: 1280px){}
+/* 2xl  */
+@media (min-width: 1536px){}

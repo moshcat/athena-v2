@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="lib/boxicons-2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <title>Athena</title>
+  </head>
+  <body class="light-mode">
+    <header class="header  container"> 
+      <nav>
+        <a href="index.html"><img class="header__logo" src="assets/img/2.svg" alt=""></a>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="course.html">Course</a>
+          </li>
+          <li>
+            <a class="header__link" href="">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                  </svg>
+                  
+            </button>
+          </li>
+          <li>
+            <a class="header__login btn" href="signin.html">Sign in</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" class="header__bars">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+              
+        </button>
+      </nav>
+    </header>
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="about.html">About</a></li>
+          <li><a class="mobile-nav__link" href="course.html">Course</a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact us</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button class="mobile-nav__sun">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                  </svg>
+            </button>
+          </li>
+          <li><a class="mobile-nav__btn btn" href="">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+        <main class="course">
+            <header class="course__header">
+                <div>
+                    <h1 class="course__title">Web Development Fundamentals</h1>
+                    <p class="course__meta">By John Smith • Last updated: September 2023</p>
+                </div>
+                <div class="course__rating">
+                    <span class="course__rating-stars">★★★★☆</span>
+                    <span class="course__rating-text">4.5 (1,234 ratings)</span>
+                </div>
+            </header>
+            <div class="course__content">
+                <div class="course__video-container">
+                    <video class="course__video" controls>
+                        <source src="assets/video/HTML in 100 Seconds.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="course__info">
+                    <section class="course__description">
+                        <h2>Course Description</h2>
+                        <p>Dive into the world of web development with our comprehensive course on Web Development Fundamentals. This course is designed to give you a solid foundation in HTML, CSS, and JavaScript, the core technologies that power the modern web.</p>
+                        <p>Whether you're a complete beginner or looking to refresh your skills, this course will take you from the basics to building your own responsive websites. You'll learn through a combination of video lectures, hands-on coding exercises, and real-world projects.</p>
+                    </section>
+                    <section class="course__section">
+                        <h3 class="course__section-title">What You'll Learn</h3>
+                        <ul class="course__section-content">
+                            <li class="course__section-item">HTML5 structure and semantics</li>
+                            <li class="course__section-item">CSS3 styling and layouts</li>
+                            <li class="course__section-item">JavaScript fundamentals and DOM manipulation</li>
+                            <li class="course__section-item">Responsive design principles</li>
+                            <li class="course__section-item">Version control with Git</li>
+                            <li class="course__section-item">Web accessibility best practices</li>
+                        </ul>
+                    </section>
+                    <section class="course__section">
+                        <h3 class="course__section-title">Course Content</h3>
+                        <ol class="course__section-content">
+                            <li class="course__section-item">Introduction to Web Development</li>
+                            <li class="course__section-item">HTML Basics</li>
+                            <li class="course__section-item">CSS Fundamentals</li>
+                            <li class="course__section-item">JavaScript Essentials</li>
+                            <li class="course__section-item">Responsive Web Design</li>
+                            <li class="course__section-item">Working with APIs</li>
+                            <li class="course__section-item">Final Project: Building a Portfolio Website</li>
+                        </ol>
+                    </section>
+                    <button class="btn btn-detail">Enroll for free</button>
+                </div>
+            </div>
+        </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="assets/img/2.svg" alt="" srcset="">
+      </div>
+      <div class="footer__links">
+        <a href="">Course</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+      </div>
+      <div class="footer__sublinks">
+        <a href="">Terms of Use</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Follow us</a>
+      </div>
+        
+      </div>
+      <div class="footer__end">
+        Have a question? Contact us: athena@info.com
+      </div>
+      <div class="footer__social">
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-discord-alt"></i>
+        <i class="bx bxl-twitter"></i>
+      </div>
+   </footer>
+
+   <script type="module" src="js/main.js"></script>
+
+  </body>
+</html>

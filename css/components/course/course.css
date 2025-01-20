@@ -1,0 +1,48 @@
+.bg-listcourse {
+    background-color: var(--clr-slate800);
+    /* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    /* background-image: url(../../../assets/img/gradient-2.svg); */
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+}
+.course {
+}
+.course__container {
+    /* display: grid;
+    border: 1px solid red;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    justify-content: center; */
+    /* border: 1px solid red;
+    display: flex;
+    gap : 16px; */
+    max-width: 1520px;
+}
+
+.course__title-list {
+    margin-bottom: var(--size-3xl);
+    font-family: "Satoshi", sans-serif;
+    font-size: var(--size-2xl);
+    letter-spacing: -0.05em;
+}
+
+/* xs */
+@media (min-width: 475px){}
+/* sm  */
+@media (min-width: 640px){
+}
+/* md  */
+@media (min-width: 768px){
+}
+/* lg  */
+@media (min-width: 1024px){
+    .course__title {
+        font-size: var(--size-3xl);
+    }
+}
+/* xl  */
+@media (min-width: 1280px){}
+/* 2xl  */
+@media (min-width: 1536px){}

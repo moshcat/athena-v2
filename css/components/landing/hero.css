@@ -7,10 +7,10 @@
     gap: 1rem;  
     /* margin-top: 2rem;  */
     padding-bottom: var(--size-8xl);
-    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
-    border-bottom: 2px solid #334155;
+    background: radial-gradient(125% 125% at 50% 10%, var(--clr-dark-1) 40%, #63e 100%);
+    border-bottom: 2px solid var(--clr-dark);
+    font-family: "linik", sans-serif !important;
 }
-
 .hero__title{
     color: var(--clr-light);
     text-transform: capitalize;

@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="lib/boxicons-2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
     <title>Athena</title>
   </head>
-  <body>
-    <header class="header header-home container">
-      
+  <body class="light-mode">
+    <header class="header header-home container"> 
       <nav>
+        <a href="index.html"><img class="header__logo" src="assets/img/2.svg" alt=""></a>
         <ul class="header__menu">
           <li>
-            <a class="header__link" href="#about">About</a>
+            <a class="header__link" href="">About</a>
           </li>
           <li>
-            <a class="header__link" href="#course">Course</a>
+            <a class="header__link" href="course.html">Course</a>
           </li>
           <li>
-            <a class="header__link" href="#contact">Contact</a>
+            <a class="header__link" href="">Contact</a>
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__sun">
+            <button id="theme-toggle" class="header__sun">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
                   </svg>
@@ -31,7 +39,7 @@
             </button>
           </li>
           <li>
-            <a class="header__login btn" href="#login">Login</a>
+            <a class="header__login btn" href="signin.html">Sign in</a>
           </li>
         </ul>
         <button class="header__bars">
@@ -42,6 +50,25 @@
         </button>
       </nav>
     </header>
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="about.html">About</a></li>
+          <li><a class="mobile-nav__link" href="course.html">Course</a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact us</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle"  class="mobile-nav__sun">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                  </svg>
+            </button>
+          </li>
+          <li><a class="mobile-nav__btn btn" href="">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <main>
         <section class="hero container">
 
@@ -66,7 +93,693 @@
               <i class="bx bxl-linkedin company__item company__item-8"></i>
           </div>
         </section>
+
+         <section class="homecourse container section">
+          <div class="homecourse__container">
+            <div class="homecourse__headSide">
+              <p class="homecourse__subtitle " data-aos="fade-up" data-aos-delay="0">Best Course in Town</p>
+              <h2 class="homecourse__title" data-aos="fade-up" data-aos-delay="400">Trending Course</h2>
+              <div class="homecourse__selectionTrending" data-aos="fade-up" data-aos-delay="800">
+                <div class="homecourse__itemSelection homecourse__itemSelection--fr homecourse__itemSelection--active">
+                  <p class="homecourse__normalSize homecourse__normalText homecourse__black homecourse__op-60">Frontend</p>
+                  <span class="homecourse__under"></span>
+                </div>
+                <div class="homecourse__itemSelection homecourse__itemSelection--be">
+                  <p class="homecourse__normalSize homecourse__normalText homecourse__black homecourse__op-60">Backend</p>
+                  <span class="homecourse__under"></span>
+                </div>
+                <div class="homecourse__itemSelection homecourse__itemSelection--md">
+                  <p class="homecourse__normalSize homecourse__normalText homecourse__black homecourse__op-60">Mobile Dev</p>
+                  <span class="homecourse__under"></span>
+                </div>
+                <div class="homecourse__itemSelection homecourse__itemSelection--bc">
+                  <p class="homecourse__normalSize homecourse__normalText homecourse__black homecourse__op-60">Blockchain</p>
+                  <span class="homecourse__under"></span>
+                </div>
+                <div class="homecourse__itemSelection homecourse__itemSelection--mk">
+                  <p class="homecourse__normalSize homecourse__normalText homecourse__black homecourse__op-60">Marketing</p>
+                  <span class="homecourse__under"></span>
+                </div>
+              </div>
+              
+              
+              <section class="homelist course container section">
+                <div class="course__container owl-carousel" id="homecourse">
+                  <div class="card">
+                    <a href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a h href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">Fullstack Javascript Web</h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a  href="course-detail.html" class="card__image-wrapper">
+                      <img class="card__image" src="assets/img/js-1.png" alt="" />
+                    </a>
+                    <div class="card__body">
+                      <a  href="course-detail.html" class="card__title-link">
+                        <h5 class="card__title">
+                          Noteworthy technology acquisitions 2021
+                        </h5>
+                      </a>
+                      <p class="card__text">
+                        Here are the biggest enterprise technology acquisitions of 2021
+                        so far, in reverse chronological order.
+                      </p>
+                      <a  href="course-detail.html" class="card__button card__button--primary">
+                        Read more
+                        <svg
+                          class="card__button-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <!-- end section course  -->
+
+        <section class="testiprove container section">
+          <h1 class="testiprove__title">Discover best practice and make your dream come true</h1>
+          <p class="testiprove__subtitle">Get inspired by project based learning that have been tested and proven effective in real-life industry.</p>
+          <div class="testiprove__img-wrapper">
+            <img src="assets/img/multiplelogo.png" alt="">
+          </div>
+          <p class="testiprove__endtext">360+ best-in-class course in technology</p>
+        </section>
+
+        <section class="feature container section"></section>
+
+        <section class="testi container section">
+          <h1 class="testi__title">What people say about us.</h1>
+          <div class="testi__wrapper owl-carousel">
+            <div class="testi__card testi__card-1">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-2">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-3">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-4">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-5">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-6">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-7">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="testi__card testi__card-8">
+              <div class="testi__btn">
+                <i class="bx bx-right-arrow-alt"></i>
+              </div>
+              <div class="testi__content">
+                <div class="testi__content--head">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+                <div class="testi__content--comment">
+                  "This course opened my eyes to the world of web development. I went from knowing nothing to building my first full-stack app!"
+                </div>
+                <div class="testi__content--end">
+                  <svg class="testi__quote"  viewBox="0 0 523 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M252.051 5.16609C249.251 -2.03391 238.218 -0.167243 233.051 1.66609C217.851 3.26605 156.051 35.1661 156.051 35.1661C156.051 35.1661 102.436 64 79.0511 90.6661C55.6657 117.332 36.4364 146 22.5511 181.166C8.66573 216.332 -0.782279 270.333 0.051054 293.666C0.851054 338.466 2.9364 329.5 16.5511 367.666C30.1657 405.832 61.0511 425.166 80.0511 434.666C112.051 451.866 154.051 445.166 171.051 439.666C203.451 431.266 233.936 388.5 233.936 388.5C233.936 388.5 251.051 361.5 251.051 313.666C251.051 289.5 242.384 266.166 236.551 255.666C228.551 230.866 160.051 200.166 160.051 200.166C160.051 200.166 114.936 181.166 118.051 166.166C110.851 146.966 153.051 96.6661 153.051 96.6661C153.051 96.6661 220.384 41.9995 247.551 24.6661C255.951 17.8661 254.051 8.83277 252.051 5.16609Z" fill="#D9D9D9"/>
+                    <path d="M521.051 5.16609C518.251 -2.03391 507.218 -0.167243 502.051 1.66609C486.851 3.26605 425.051 35.1661 425.051 35.1661C425.051 35.1661 371.436 64 348.051 90.6661C324.666 117.332 305.436 146 291.551 181.166C277.666 216.332 268.218 270.333 269.051 293.666C269.851 338.466 271.936 329.5 285.551 367.666C299.166 405.832 330.051 425.166 349.051 434.666C381.051 451.866 423.051 445.166 440.051 439.666C472.451 431.266 502.936 388.5 502.936 388.5C502.936 388.5 520.051 361.5 520.051 313.666C520.051 289.5 511.384 266.166 505.551 255.666C497.551 230.866 429.051 200.166 429.051 200.166C429.051 200.166 383.936 181.166 387.051 166.166C379.851 146.966 422.051 96.6661 422.051 96.6661C422.051 96.6661 489.384 41.9995 516.551 24.6661C524.951 17.8661 523.051 8.83277 521.051 5.16609Z" fill="#D9D9D9"/>
+                    </svg>
+                </div>
+              </div>
+              <div class="testi__profile">
+                <img class="testi__profile--img" src="assets/img/avatar/Unsplash-Avatars_0000s_0015_joao-silas-KCPDQEcWu4s-unsplash 1.png" alt="">
+                <div class="testi__profile--name">
+                  <h3>John Doe</h3>
+                  <p>CTO at Mapskin.ai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
     </main>
-    <!-- <footer></footer> -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="assets/img/2.svg" alt="" srcset="">
+      </div>
+      <div class="footer__links">
+        <a href="">Course</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+      </div>
+      <div class="footer__sublinks">
+        <a href="">Terms of Use</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Follow us</a>
+      </div>
+        
+      </div>
+      <div class="footer__end">
+        Have a question? Contact us: athena@info.com
+      </div>
+      <div class="footer__social">
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-instagram-alt"></i>
+        <i class="bx bxl-discord-alt"></i>
+        <i class="bx bxl-twitter"></i>
+      </div>
+   </footer>
+
+     <script type="module" src="js/main.js"></script>
+    <script src="lib/jquery v3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 16,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            loop: true,
+            autoWidth: true,
+            nav: false,
+          },
+          375: {
+            items: 1,
+            autoWidth: true,
+            loop: true,
+            nav: false,
+          },
+          425: {
+            items: 1,
+            autoWidth: true,
+            loop: true,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            loop: false,
+            nav: false,
+          },
+          768: {
+            items: 2,
+            nav: false,
+            autoWidth: true,
+            loop: true,
+          },
+          1000: {
+            items: 4  ,
+            nav: true,
+            autoWidth: true,
+            loop: true,
+          },
+          2560: {
+            items: 6,
+            nav: true,
+            loop: true,
+            autoWidth: true,
+          }
+        },
+      });
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+
+      $("#homecourse").owlCarousel({
+        loop: true,
+        margin: 16,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            loop: true,
+            autoWidth: true,
+            nav: false,
+          },
+          375: {
+            items: 1,
+            autoWidth: true,
+            loop: true,
+            nav: false,
+          },
+          425: {
+            items: 1,
+            autoWidth: true,
+            loop: true,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            loop: false,
+            nav: false,
+          },
+          768: {
+            items: 2,
+            nav: false,
+            autoWidth: true,
+            loop: false,
+          },
+          1000: {
+            items: 4  ,
+            nav: true,
+            autoWidth: true,
+            loop: false,
+          },
+          2560: {
+            items: 6,
+            nav: true,
+            loop: false,
+            autoWidth: true,
+          }
+        },
+      });
+    </script>
   </body>
 </html>

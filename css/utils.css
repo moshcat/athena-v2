@@ -7,7 +7,7 @@
     text-decoration: none;
     letter-spacing: -0.05em;
     background-color: var(--clr-sky);
-    color: var(--clr-light);
+    color: var(--clr-text);
     padding: 0.5em 1em;
     border-radius: 6px;
     box-shadow: 
@@ -31,7 +31,7 @@
 }
 
 .btn-dark {
-    background-color: #1e293b;
+    background-color: var(--clr-dark);
     color: var(--clr-light); 
     transition: none;
     border: 1px solid hsl(var(--clr-border));
@@ -62,6 +62,9 @@
 }
 .section {
     margin-top: 5rem;
+}
+.section-course {
+    margin-top: 2rem;
 }
 /* xs */
 @media (min-width: 475px){}

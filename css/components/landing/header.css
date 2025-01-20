@@ -1,12 +1,20 @@
 .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
 }
 .header-home {
-    background-color: #000 ;
+    background-color: var(--clr-dark-1);
+}
+.header-home-1 {
+    background-color: transparent ;
+}
+.header-slate {
+    background-color: var(--clr-slate600);
 }
 
 .header__menu {
@@ -19,6 +27,15 @@
     display: block;;
     height: var(--size-2xl);
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: var(--size-4xl);
+}   
 
 
 /* xs */
@@ -62,6 +79,10 @@
     .header__bars{
         display: none;
     }
+
+    .header__logo {
+        width: var(--size-7xl);
+    }
 }
 /* lg  */
 @media (min-width: 1024px){
@@ -75,6 +96,9 @@
     }
     .header__login {
         font-size: var(--size-sm);
+    }
+    .header__logo {
+        width: var(--size-5xl);
     }
 }
 /* xl  */

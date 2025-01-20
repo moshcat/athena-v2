@@ -1,0 +1,65 @@
+
+
+.search__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-sky);
+    border-radius: var(--size-xs);
+
+}
+
+.navbar {
+    background-color: #18181b; /* Dark background */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: var(--size-xs);
+    overflow-x: scroll;
+  }
+
+  /* Element: navbar__item */
+  .navbar__item {
+    margin-right: 30px;
+    display: flex;
+    align-items: center; 
+   /* Vertically align icon and text */
+  }
+
+  /* Element: navbar__link */
+  .navbar__link {
+    color: #a1a1aa; /* Light gray text */
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+  }
+
+  /* Element: navbar__icon */
+  .navbar__icon {
+    margin-right: 5px; /* Space between icon and text */
+    height: 20px; /* Adjust icon size as needed */
+    width: 20px;
+  }
+
+  /* Modifier: navbar__item--active */
+  .navbar__item--active .navbar__link {
+    color: white; /* White text for active item */
+  }
+
+
+
+/* xs */
+@media (min-width: 475px){}
+/* sm  */
+@media (min-width: 640px){
+}
+/* md  */
+@media (min-width: 768px){
+}
+/* lg  */
+@media (min-width: 1024px){
+}
+/* xl  */
+@media (min-width: 1280px){}
+/* 2xl  */
+@media (min-width: 1536px){}

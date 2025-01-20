@@ -1,0 +1,115 @@
+.course {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.course__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.course__title {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.course__meta {
+    font-size: var(--size-base);
+    color: #888;
+}
+
+.course__rating {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: var(--size-xl);
+}
+
+.course__rating-stars {
+    color: #ffd700;
+    margin-right: 0.5rem;
+}
+
+.course__content {
+    display: flex;
+    gap: 2rem;
+}
+
+.course__video-container {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.course__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+.course__info {
+    flex: 1;
+}
+
+.course__description {
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-border);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.course__description h2{
+    font-size: var(--size-xl);
+}
+
+.course__section {
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-border);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.course__section-title {
+    font-size: var(--size-xl);
+    margin: 0 0 1rem 0;
+}
+
+.course__section-content {
+    padding-left: 1.5rem;
+}
+
+.course__section-item {
+    margin-bottom: 0.5rem;
+}
+.btn-detail {
+    width: 100%;
+    padding: var(--size-xl);
+}
+
+@media (max-width: 768px) {
+    .course__content {
+        flex-direction: column;
+    }
+
+    .course__video-container {
+        position: static;
+        margin-bottom: 2rem;
+    }
+    .course__rating {
+        display: flex;
+        flex-direction: column;
+    }
+    .course__rating-text     {
+        font-size: var(--size-base);
+    }
+}

@@ -19,6 +19,11 @@
     font-weight: 500;  
     font-style: normal;
 }
+@font-face {
+    font-family: 'linik';
+    src: url('../assets/fonts/linik-sans.vf-regular.ttf') format('truetype');
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Satoshi';

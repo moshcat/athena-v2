@@ -1,0 +1,112 @@
+
+.profile {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--clr-dark);
+    border:1px solid var(--clr-border);
+    border-radius: 8px;
+    margin-bottom: 6rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.profile__name {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.profile__username {
+    font-size: 1rem;
+    color: #888;
+    margin: 0.5rem 0 0;
+}
+
+.profile__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile__info-item {
+    background-color: var(--clr-dark);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.profile__info-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.profile__info-value {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.profile__courses {
+    background-color: var(--clr-dark);
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.profile__courses-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.profile__course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-slate800);
+}
+
+.profile__course:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.profile__course-name {
+    font-weight: 600;   
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+}
+
+.profile__course-progress {
+    width: 150px;
+    height: 8px;
+    background-color: var(--clr-slate400);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.profile__course-progress-bar {
+    height: 100%;
+    background-color: #22d3ee;
+}
+
+.line__divider {
+    border: 1px solid var(--clr-gray700);
+    background-color: var(--clr-gray700);
+    width: 100%;
+}

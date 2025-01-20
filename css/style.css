@@ -5,13 +5,36 @@
 @import url(components/landing/header.css);
 @import url(components/landing/hero.css);
 @import url(components/landing/company.css);
+@import url(components/landing/testiprove.css);
+@import url(components/landing/testi.css);
+@import url(components/landing/homecourse.css);
+
+/* import course page  */
+@import url(components/course/course.css);
+@import url(components/course/hero-section.css);
+@import url(components/course/detail.css);
 
 /* import untuk signin  */
 @import url(components/signin/siginin_card.css);
 
+/* import reusable  */
+@import url(components/card.css);
+@import url(components/footer.css);
+@import url(components/mobile-nav.css);
+@import url(components/searchcat.css);
+
+/* import profile  */
+@import url(components/profile/profile.css);
+
+
+
+
+
+
 :root {
     --clr-dark:#070a13 ;
     --clr-light: #f1f5f9;
+    --clr-text: #f1f5f9;
     --clr-slate400: #94a3b8;
     --clr-slate600: #475569;
     --clr-slate800: #1e293b;
@@ -21,7 +44,14 @@
     --clr-indigo: #4f45e5;
     --clr-sky: #0284c7;
     --clr-bg: #0a101f;
+    --clr-light-1: #fff;
+    --clr-dark-1: #000;
     --clr-border: #334155;
+    --clr-border-l: rgb(148 163 184);
+    --clr-bgsignd: rgba(120, 119, 198, 0.3);
+    --clr-bgsigndt: rgba(255, 255, 255, 0);
+    --clr-bgsignd-l: rgba(2, 132, 199, 0.3);
+    --clr-bgsigndt-l: rgb(255, 255, 255);
 
     /* rgb(225,29,72)
     rgb(79, 70, 229) */
@@ -46,7 +76,7 @@
 * {
     margin: 0;
     line-height: calc(1em + 0.5rem);
-    /* border: 1px solid red; */
+    /* border: 1px solid red;   */
 }
 *,
 ::before,
@@ -68,14 +98,28 @@ html {
 	-webkit-text-size-adjust: 100%; 
 	tab-size: 4;
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
 .light-mode {
     /* WIP  */
     --clr-light:#070a13 ;
     --clr-dark: #f1f5f9;
+    --clr-light-1: #000;
+    --clr-dark-1: #fff;
+
     --clr-slate400: #1e293b;
     --clr-slate600: #1e293b;
     --clr-slate800: #1e293b;
+    --clr-border: rgb(148 163 184);
+    --clr-border-l: #334155;
+
+    --clr-bgsignd-l: rgba(2, 131, 199, 0.87);
+    --clr-bgsigndt-l: rgba(255, 255, 255, 0);
+    --clr-bgsignd: rgba(2, 132, 199, 0.3);
+    --clr-bgsigndt: rgb(255, 255, 255);
     /* --clr-rose: #e11d48;
     --clr-indigo: #4f45e5;
     --clr-sky: #0284c7;

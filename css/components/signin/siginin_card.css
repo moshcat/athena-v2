@@ -1,6 +1,5 @@
 .bg__signin {
-    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0)) !important;
-
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, var(--clr-bgsignd), var(--clr-bgsigndt)) !important;
 }
 
 .signin {
@@ -17,7 +16,7 @@
     max-width: 24rem;
     padding: 24px;
     margin-bottom: var(--size-6xl);
-    background-color: var(--clr-slate800);
+    background-color: var(--clr-dark);
     border: 1px solid var(--clr-border);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -62,7 +61,7 @@ label {
 
 input[type="email"],
 input[type="password"] {
-    background-color: var(--clr-gray800);
+    background-color: var(--clr-dark);
     border: 1px solid var(--clr-gray700);
     color: var(--clr-light);
     font-size: 0.875rem;
@@ -122,6 +121,7 @@ input[type="checkbox"] {
 }
 .btn-submit {
     box-shadow: none;
+    text-align: center;
     transition: 0.3s ease-in-out;
 }
 .btn-submit {
